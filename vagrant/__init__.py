@@ -116,11 +116,12 @@ class Vagrant(object):
     POWEROFF = 'poweroff'  # vagrant halt
     ABORTED = 'aborted'  # The VM is in an aborted state
     SAVED = 'saved' # vagrant suspend
+    SUSPENDED = 'suspended' # ?
     # LXC statuses
     STOPPED = 'stopped'
     FROZEN = 'frozen'
 
-    STATUSES = (RUNNING, NOT_RUNNING, NOT_CREATED, POWEROFF, ABORTED, SAVED, STOPPED, FROZEN)
+    STATUSES = (RUNNING, NOT_RUNNING, NOT_CREATED, POWEROFF, ABORTED, SAVED, STOPPED, FROZEN, SUSPENDED)
 
     BASE_BOXES = {
         'ubuntu-Lucid32': 'http://files.vagrantup.com/lucid32.box',
